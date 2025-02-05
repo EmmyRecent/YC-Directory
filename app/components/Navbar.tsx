@@ -40,7 +40,7 @@ const Navbar = async () => {
               action={async () => {
                 "use server";
 
-                await signIn("github");
+                await signIn("github", { redirectTo: "/" });
               }}
             >
               <button type="submit">Login</button>
